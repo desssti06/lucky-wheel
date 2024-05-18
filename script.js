@@ -13,3 +13,13 @@ btn.onclick = function () {
     var userInput = localStorage.getItem("inputCash");
     // Menampilkan nilai input pengguna di halaman ini
     document.getElementById("cash").innerHTML = "" + inputCash;
+
+// Mendapatkan nilai input pengguna yang disimpan di localStorage
+var userInput = localStorage.getItem("inputCash");
+// Menampilkan nilai input pengguna di halaman ini
+document.getElementById("cash").innerHTML = " " + userInput;
+
+ // Mendapatkan nilai input pengguna yang disimpan di localStorage
+ var userInput = localStorage.getItem("inputOutstanding");
+// Menampilkan nilai input pengguna di halaman ini
+document.getElementById("outstanding").innerHTML = " " + userInput;
