@@ -9,7 +9,7 @@ main{
     justify-content: center;
     overflow: hidden;
     background: rgb(255, 255, 255);
-    height: 400px;
+    height: 100%;
 }
 
 header{
@@ -33,9 +33,15 @@ header{
     justify-content: center;
     padding-bottom: 50%;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 iframe {
-    width: 50%; /* Lebar iframe */
-    height: 650px; /* Tinggi iframe */
+    width: 100%; /* Lebar iframe */
+    height: 800px; /* Tinggi iframe */
     margin:  auto; /* Margin agar iframe berada di tengah */
     display: block; /* Agar iframe menjadi elemen blok */
 }

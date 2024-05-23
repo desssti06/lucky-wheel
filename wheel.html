@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Lucky Spin</title>
+    <link rel="stylesheet" href="wheel-style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="spinButton">Spin</button>
+        <div class="wheel-container">
+            <canvas id="wheelCanvas" width="500" height="500"></canvas>
+            <div class="pointer"></div>
+        </div>
+
+        <div class="wheel">
+            <img src="wing.png" alt="wing">
+        </div>
+        
+    </div>
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="winnerText"></p>
+        </div>
+    </div>
+    <script src="wheel-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white;
+    position: relative;
+    margin-top: -5%;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Pastikan container berada di atas */
+    top: -80px;
+}
+
+button {
+    height: 60px;
+    width: 150px;
+    background: #f8f29f;
+    position: absolute;
+    margin-top: 430px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border: none; 
+    z-index: 1; /* Pastikan container berada di atas */
+    top: 3px;
+    left: 43%;
+}
+
+.wheel-container {
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    z-index: 1; /* Pastikan wheel-container berada di atas */
+    transform: scale(0.7);
+    top: -36px;
+    left: 7%;
+}
+
+.pointer {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid red;
+    position: absolute;
+    top: 30px;
+    left: 46%;
+    transform: translateX(-50%);
+    transform: rotate(180deg);
+    z-index: 2; /* Pastikan pointer berada di atas wheel-container */
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 3; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wheel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Menempatkan gambar di belakang container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 33px;
+}
+
+.wheel img {
+    width: 100%; /* Sesuaikan ukuran gambar */
+    height: auto;
+}
